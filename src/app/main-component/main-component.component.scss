@@ -1,0 +1,23 @@
+.hii_text{
+    font-size: 65px;
+    
+}
+.profile-img{
+    height: 40rem;
+}
+ 
+
+.viewMore{
+    transition: ease-in-out 1s;
+}
+ .btnDisable{
+    background-color: #a4a4e95e;
+ }
+
+ 
+@media (min-width: 576px) { 
+    .menus{
+        display: none !important;
+    }
+}
+ 
