@@ -7,7 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponentComponent } from './main-component/main-component.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
- import {HttpClientModule} from '@angular/common/http'
+ import {HttpClientModule} from '@angular/common/http';
+import { CompanyComponent } from './company/company.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component'
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     MainComponentComponent,
-    FooterComponent
+    FooterComponent,
+    CompanyComponent,
+    ExperienceComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
