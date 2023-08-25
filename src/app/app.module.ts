@@ -10,7 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
  import {HttpClientModule} from '@angular/common/http';
 import { CompanyComponent } from './company/company.component';
 import { ExperienceComponent } from './experience/experience.component';
-import { ContactComponent } from './contact/contact.component'
+import { ContactComponent } from './contact/contact.component';
+import { AddTeamComponent } from './add-team/add-team.component'
 
 
 @NgModule({
@@ -21,14 +22,16 @@ import { ContactComponent } from './contact/contact.component'
     FooterComponent,
     CompanyComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    AddTeamComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

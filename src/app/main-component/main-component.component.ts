@@ -77,6 +77,7 @@ export class MainComponentComponent implements OnInit {
     const typed = new Typed('.typed-element', options);
   }
   successMsg = false;
+  errorMsg=false;
   contact: ContactUs = new ContactUs();
   ngSubmit(value: any) {
     // console.log(value.value);
@@ -85,7 +86,6 @@ export class MainComponentComponent implements OnInit {
     this.contact.email = value.value.email;
     this.contact.message = value.value.message;
     this.contactUs.ContactUsData(this.contact).subscribe((response: any) => {
-      try {
         if (response) {
           this.successMsg = true;
           this.ContactUsForm.reset();
@@ -93,7 +93,12 @@ export class MainComponentComponent implements OnInit {
             this.successMsg = false;
           }, 5000);
         }
-      } catch (error) {}
+        else{
+          setTimeout(() => {
+            this.errorMsg=true;
+          }, 5000);
+        }
+    
     });
   }
 }

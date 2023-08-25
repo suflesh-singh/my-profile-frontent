@@ -14,12 +14,12 @@ export class ContactComponent implements OnInit {
     this.gettingAllQuery()
   }
 
-
+getAllData:any=[]
 gettingAllQuery()
 {
   return this.contactService.gettingAllQuery().subscribe((response:any)=>{
     console.log(response,'reasponse');
-    
+    this.getAllData=response;
   })
 }
 

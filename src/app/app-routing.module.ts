@@ -4,6 +4,7 @@ import { MainComponentComponent } from './main-component/main-component.componen
 import { CompanyComponent } from './company/company.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { AddTeamComponent } from './add-team/add-team.component';
 
 const routes: Routes = [
 {
@@ -20,6 +21,9 @@ const routes: Routes = [
 },
 {
   path:'contact',component:ContactComponent
+},
+{
+  path:'addd-team',component:AddTeamComponent
 }
 
 

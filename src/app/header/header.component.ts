@@ -9,6 +9,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 
 @HostListener('window:resize', ['$event'])
 export class HeaderComponent implements OnInit {
+  menuMobileView=false;
   constructor() { 
    
   }
